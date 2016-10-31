@@ -147,7 +147,8 @@ def generate_vaccine_peptides(
         transcript_id_whitelist=None,
         protein_sequence_length=protein_fragment_sequence_length,
         min_reads_supporting_cdna_sequence=min_reads_supporting_cdna_sequence,
-        max_protein_sequences_per_variant=1)
+        max_protein_sequences_per_variant=1,
+        variant_cdna_sequence_assembly=True)
 
     result_dict = {}
     for variant, isovar_protein_sequences in protein_sequences_generator:
